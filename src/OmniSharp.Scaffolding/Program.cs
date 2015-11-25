@@ -75,14 +75,14 @@ namespace Microsoft.Extensions.CodeGeneration
             }
         }
 
-        private static bool IsHelpArgument([NotNull]string argument)
+        private static bool IsHelpArgument(string argument)
         {
             return string.Equals("-h", argument, StringComparison.OrdinalIgnoreCase) ||
                 string.Equals("-?", argument, StringComparison.OrdinalIgnoreCase) ||
                 string.Equals("--help", argument, StringComparison.OrdinalIgnoreCase);
         }
 
-        private static void AddCodeGenerationServices([NotNull]ServiceProvider serviceProvider)
+        private static void AddCodeGenerationServices(ServiceProvider serviceProvider)
         {
             serviceProvider.Add(typeof(IApplicationEnvironment), PlatformServices.Default.Application);
             serviceProvider.Add(typeof(IRuntimeEnvironment), PlatformServices.Default.Runtime);
