@@ -4,7 +4,7 @@ environment:
   NUGET_PUSH_APIKEY:
     secure: /BBmYv/HUU0lnVk7iypx0Nq5yeoD8N/LGxGA4xrUPYuqbeMsW0XuUiMSaM/GMwB3
   NUGET_PUSH_FEED:
-    secure: bDDMNs4Db9yruHKBN9AHLkredI7oRY2j2hhqQpYp72iRCPnbYx6hJEh5ouQvFLxC
+    secure: bDDMNs4Db9yruHKBN9AHLvY1UVt0R27mXRc++YxtqdKr4tYLOY9jyfiQXpUBg49YbhFI6m7bIBsy5xUJcoj4Tg==
 build_script:
 - cmd: condo.cmd --coverage --secure push
 test: off
