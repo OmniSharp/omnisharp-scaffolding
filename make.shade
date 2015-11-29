@@ -1,0 +1,12 @@
+var product             = 'omnisharp-scaffolding'
+var version             = '1.0.0'
+var company             = 'OmniSharp Team'
+var copyright           = '©. OmniSharp Team. All rights reserved.'
+var license             = 'The MIT License (MIT)'
+var licenseUri          = 'https://opensource.org/licenses/MIT'
+
+var src_path            = 'src'
+var test_path           = 'test'
+
+use-condo-lifecycle
+use-condo-goals

@@ -40,6 +40,28 @@ Our long term goals and objectives include the following:
 
 We welcome any and all contributors that would like to help. Please refer to the [CONTRIBUTING][] document for more information.
 
+## Building OmniSharp Scaffolding
+
+This project is currently using [condo][condo-url]: a cross-platform build, test, and packaging system for DNX-based projects. Once you have 
+cloned the repository, you can build the project using the commands below:
+
+### Windows
+``` cmd
+# with code coverage results
+condo --coverage default
+
+# without code coverage results
+condo
+```
+
+*Note: code coverage results are only available on Windows. We are not currently aware of any cross-platform code coverage tools for dnx-based
+projects.*
+
+### OS X and Linux
+``` bash
+./condo.sh
+```
+
 ## Copyright and License
 
 &copy; OmniSharp Team and contributors. Distributed under the MIT license. See [LICENSE][] for details.
@@ -64,3 +86,5 @@ We welcome any and all contributors that would like to help. Please refer to the
 
 [gitter-url]: https://gitter.im/omnisharp
 [gitter-image]: https://img.shields.io/badge/⊪%20gitter-join%20chat%20→-1dce73.svg
+
+[condo-url]: https://github.com/pulsebridge/condo

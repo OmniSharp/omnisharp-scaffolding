@@ -1,13 +1,11 @@
 init:
 - cmd: git config --global core.autocrlf true
 environment:
-  APIKEY:
+  NUGET_PUSH_APIKEY:
     secure: /BBmYv/HUU0lnVk7iypx0Nq5yeoD8N/LGxGA4xrUPYuqbeMsW0XuUiMSaM/GMwB3
-  NUGET_PUBLISH_FEED:
-    secure: bDDMNs4Db9yruHKBN9AHLkredI7oRY2j2hhqQpYp72jWtz5EwOPzC2r/UQOLiliURTtULV7X8m9VSK62D8Wqcg==
-  PACKAGES_PUBLISH_DIR:
-    secure: HXQ11yaBYkkgycdgVvSsyfCrNqcERqixWYvRlEAW0kM=
+  NUGET_PUSH_FEED:
+    secure: bDDMNs4Db9yruHKBN9AHLkredI7oRY2j2hhqQpYp72iRCPnbYx6hJEh5ouQvFLxC
 build_script:
-- cmd: build.cmd --quiet install
+- cmd: condo.cmd --coverage --secure push
 test: off
 deploy: off
