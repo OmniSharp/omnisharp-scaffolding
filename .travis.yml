@@ -14,6 +14,6 @@ addons:
     - libunwind8
     - zlib1g
 mono:
-  - 4.0.5
+  - 4.2.1
 script:
   - ./condo.sh verify

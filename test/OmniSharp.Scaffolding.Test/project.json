@@ -1,10 +1,9 @@
 ﻿{
   "version": "1.0.0-*",
+  
   "authors": [ "OmniSharp Team" ],
   "owners": [ "OmniSharp Team" ],
-  "compilationOptions": {
-    "warningsAsErrors": true
-  },
+  
   "dependencies": {
     "OmniSharp.Scaffolding": "1.0.0-*",
     "xunit.runner.aspnet": "2.0.0-aspnet-*"
