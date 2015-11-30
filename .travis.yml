@@ -16,4 +16,4 @@ addons:
 mono:
   - 4.2.1
 script:
-  - ./condo.sh verify
+  - ./condo.sh
