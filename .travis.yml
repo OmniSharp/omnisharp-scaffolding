@@ -1,6 +1,9 @@
 language: csharp
 sudo: required
 dist: trusty
+os:
+  - linux
+  - osx
 addons:
   apt:
     packages:
@@ -10,9 +13,7 @@ addons:
     - libssl-dev
     - libunwind8
     - zlib1g
-env:
-  - KOREBUILD_DNU_RESTORE_CORECLR=true
 mono:
-  - 4.0.5
+  - 4.2.1
 script:
-  - ./build.sh --quiet verify
+  - ./condo.sh

@@ -20,9 +20,10 @@ nuget.exe
 *.ncrunchsolution
 *.*sdf
 *.ipch
-/Scaffolding.sln.ide
+/OmniSharp.Scaffolding.sln.ide
 /*.vspx
 project.lock.json
 /.vs
 launchsettings.json
 test/*/Properties
+Condo.AssemblyInfo.cs
